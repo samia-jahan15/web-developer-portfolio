@@ -48,9 +48,9 @@ nav a{
 /* header related styles */
 .header{
      background-color: #FFF8F3;
-     background-image: url('../images/header_bg.png');
+     background-image: url('../images/header_bg.png'), url('../images/developer.png');
      background-repeat: no-repeat;
-     background-position: bottom right;
+     background-position: bottom right , top left;
 }
 .banner{
 padding: 30px 30px 0px 150px;
@@ -60,7 +60,6 @@ justify-content: space-between;
 }
 .banner .profile-picture{
     width: 500px;
-  
 }
 .banner-greeting{
 font-size: 45px;
@@ -85,9 +84,8 @@ height: 60px;
 .about{
     padding: 130px;
     border-radius: 10px;
-background: #FFF8F3;
-margin:130px
-0 ;
+    background: #FFF8F3;
+    margin:130px 0 ;
 
 }
 .section-title{
@@ -168,7 +166,7 @@ font-weight: 700;
     margin: 30px;}
 
     .resume-item-institute{
-margin-bottom: 20px;
+    margin-bottom: 20px;
 
     }
 
@@ -176,30 +174,34 @@ margin-bottom: 20px;
         text-align: center;
         margin-top: 50px;
     }
-    .footer{
-        display: flex;
-        gap: 100px;
-        background:#FFF8F3;
-        padding: 130px 200px;
-        margin-top: 100px;
-    }
-    .footer-column{
-        width: 50%;
-    }
-    .contact input[type="text"],.contact input[type="email"] , textarea{
-display: block;
-margin-bottom: 25px;
-padding: 18px;
-color: #757575;
-background: #FFF;
-border: 0;
-width: 100%;
+    /* footer style */
+footer {
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
 }
+
+.footer-column {
+    width: 50%;
+}
+
 .social-links a{
     margin-right: 25px;
 }
 
-
+.contact input[type="text"], .contact input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 100%;
+}
 
 
 
